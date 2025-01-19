@@ -1,0 +1,27 @@
+{% extends 'flatpages/default.html' %}
+
+{% block content %}
+{{ flatpage.title }}
+    <hr>
+<head>
+			  <style type="text/css">
+			  .auto-style1 {
+				  color: #00FF00;
+				  background-color: #800000;
+			  }
+			  .auto-style2 {
+				  font-style: italic;
+				  text-align: center;
+			  }
+			  .auto-style4 {
+				  font-size: xx-large;
+				  background-color: #0000FF;
+			  }
+			  </style>
+			  </head>
+
+			  <body class="auto-style1">
+
+			  <div class="auto-style2">
+				  <strong><span class="auto-style4">{{flatpage.content}}</span></strong></div>
+			  {% endblock content %}
